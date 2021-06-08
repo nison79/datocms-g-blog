@@ -5,12 +5,13 @@ module.exports = {
     title: "Gatsby Blog Demo",
   },
   plugins: [
-    'gatsby-plugin-postcss',
+    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-source-datocms",
       options: {
-        apiToken: process.env.DATO_API_TOKEN,
-        environment: process.env.DATO_ENVIRONMENT,
+        apiToken: `b45128dd98328a2b5c39154fe438f0`,
+        preview: false,
+        disableLiveReload: false,
       },
     },
     "gatsby-plugin-sharp",
