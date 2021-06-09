@@ -5,7 +5,7 @@ export default function Avatar({ name, picture }) {
   return (
     <div className="flex items-center">
       <Image fixed={picture.fixed} className="w-12 h-12 rounded-full mr-4" />
-      <div className="text-xl font-bold">{name}</div>
+      <div className="text-sm md:text-md lg:text-lg font-bold">{name}</div>
     </div>
   )
 }

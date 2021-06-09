@@ -3,12 +3,12 @@ import React from "react";
 export default function Intro() {
   return (
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
-        Welcome to George Nikoglou Blog.
+      <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 transform hover:scale-110 transition ease-in duration-300">
+        Aspects of life.
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        The stories of me and my family.{' '}
+        Stories of me and my family.{" "}
       </h4>
     </section>
-  )
+  );
 }
