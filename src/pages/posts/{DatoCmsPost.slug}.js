@@ -50,7 +50,7 @@ export const query = graphql`
             image {
               fluid(
                 imgixParams: { fm: "jpg" }
-                sizes: "(max-width: 700) 100vw, 700px"
+                sizes: "(max-width: 500) 100vw, 500px"
               ) {
                 ...GatsbyDatoCmsFluid
               }
@@ -62,7 +62,7 @@ export const query = graphql`
       coverImage {
         fluid(
           imgixParams: { fm: "jpg" }
-          sizes: "(max-width: 1500px) 100vw, 1500px"
+          sizes: "(max-width: 1000px) 100vw, 1000px"
         ) {
           ...GatsbyDatoCmsFluid
         }

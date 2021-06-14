@@ -15,21 +15,17 @@ export default function PostPreview({
   return (
     <div>
       <div className="mb-5">
-        <CoverImage
-          slug={slug}
-          title={title}
-          fluid={coverImage.small}
-        />
+        <CoverImage slug={slug} title={title} fluid={coverImage.small} />
       </div>
-      <h3 className="text-4xl font-semibold mb-3 leading-snug">
+      <h3 className="text-3xl font-semibold mb-1leading-snug">
         <Link to={`/posts/${slug}`} className="hover:underline">
           {title}
         </Link>
       </h3>
-      <div className="text-lg mb-4">
+      <div className="text-sm mb-1 text-gray-400">
         <Date dateString={date} />
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      <p className="text-md leading-relaxed mb-4 text-gray-600">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />
     </div>
   );
