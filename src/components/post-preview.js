@@ -21,10 +21,10 @@ export default function PostPreview({
         <Link to={`/posts/${slug}`} className="hover:underline">
           {title}
         </Link>
-      </h3>
-      <div className="text-sm mb-1 text-gray-400">
+      <div className="text-xs my-2 text-gray-400">
         <Date dateString={date} />
       </div>
+      </h3>
       <p className="text-md leading-relaxed mb-4 text-gray-600">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />
     </div>
